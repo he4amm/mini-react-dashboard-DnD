@@ -1,0 +1,275 @@
+/**********************************
+** WIDGET
+***********************************/
+
+.Widget {
+    position: absolute;
+    min-width: 200px;
+    min-height: 200px;
+    box-shadow: 1px 2px 2px 0px #ccc;
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+.Widget-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    border-bottom: 1px solid rgb(207, 213, 224);
+}
+
+.Widget-header__title {
+    font-size: 14px;
+}
+
+.Widget-header__actions {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+/**********************************
+** DROPDOWN
+***********************************/
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-btn {
+    background-image: url('../../assets/img/settings_default.svg');
+    background-position: center;
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    cursor: pointer;
+    border: 0px;
+    width: 20px;
+    height: 20px;
+    padding: 0px;
+}
+
+.dropdown-btn:active {
+    background-image: url('../../assets/img/settings_selected.svg');
+}
+
+.hours-dropdown-btn {
+    background-image: url('../../assets/img/arrow-down.svg');
+    background-position: right center;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    cursor: pointer;
+    border: 0px;
+    height: 20px;
+    padding: 0px 20px 0px;
+    font-size: 13px;
+    text-transform: capitalize;
+    color: rgb(98, 121, 135);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-color: #fff;
+    border: 1px solid rgb(220, 225, 233);
+    border-radius: 4px;
+    z-index: 1;
+    min-width: 160px;
+    margin: 0px;
+    padding: 5px 0px;
+    list-style-type: none;
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+    -webkit-padding-start: 0px;
+    box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown.open>.dropdown-content {
+    display: block !important;
+}
+
+.dropdown-content>li {
+    color: #000;
+    padding: 7px 15px;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+.dropdown-content>li:hover,
+.dropdown-content>li.active {
+    color: #fff;
+    background-color: rgb(83, 106, 153);
+}
+
+.Widget-body {
+    padding: 10px 10px;
+}
+
+/**********************************
+** USERS
+***********************************/
+
+.Users {
+    display: flex;
+    flex-direction: column;
+}
+
+.Users-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Users-item__details {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50%;
+}
+
+.Users-item__details--avatar {
+    width: 30px;
+    height: 30px;
+}
+
+.Users-item__details--avatar>img {
+    width: 100%;
+    height: 100%;
+}
+
+.Users-item__details--name {
+    font-size: 13px;
+    padding-left: 7px;
+    color: rgb(60, 76, 98);
+}
+
+.Users-item__values {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 50%;
+}
+
+.Users-item__values--bar {
+    flex: auto;
+    height: 10px;
+    background-color: rgb(207, 213, 224);
+}
+
+.Users-item__values--bar-value {
+    display: block;
+    width: 20%;
+    height: 10px;
+    background-color: rgb(69, 181, 94);
+}
+
+.Users-item__values--precentage {
+    font-size: 14px;
+    width: 30px;
+    text-align: right;
+    font-weight: bold;
+    padding-left: 10px;
+    color: rgb(33, 49, 73);
+}
+
+/**********************************
+** FORM
+***********************************/
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+}
+
+.form-group>label {
+    color: rgb(101, 125, 139);
+    font-size: 12px;
+    padding-bottom: 5px;
+}
+
+.form-group>.radio>label {
+    font-size: 12px;
+    padding-right: 10px;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 3px 6px;
+    max-width: 250px;
+    font-size: 12px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+.Widget-body__actions {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+/**********************************
+** EDIT WIDGET BUTTONS
+***********************************/
+
+.EditWidget__button--save,
+.EditWidget__button--cancel {
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 7px 10px 7px 30px;
+    margin-right: 10px;
+    color: #fff;
+    border-radius: 4px;
+    border: 0px;
+    cursor: pointer;
+    width: 65px;
+    height: 32px;
+}
+
+.EditWidget__button--save {
+    background-image: url('../../assets/img/savebutton_default.svg');
+}
+
+.EditWidget__button--save:hover {
+    background-image: url('../../assets/img/savebutton_hover.svg');
+}
+
+.EditWidget__button--save:active {
+    background-image: url('../../assets/img/savebutton_selected.svg');
+}
+
+.EditWidget__button--cancel {
+    background-image: url('../../assets/img/cancelbutton_default.svg');
+}
+
+.EditWidget__button--cancel:hover {
+    background-image: url('../../assets/img/cancelbutton_hover.svg');
+}
+
+.EditWidget__button--cancel:active {
+    background-image: url('../../assets/img/cancelbutton_selected.svg');
+}

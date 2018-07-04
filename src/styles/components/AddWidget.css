@@ -1,0 +1,159 @@
+/**********************************
+** ADD WIDGET BUTTONS
+***********************************/
+
+.AddWidget__button--add {
+    background-color: rgb(83, 106, 153);
+    background-image: url('../../assets/img/addwidget.svg');
+    background-position: left center;
+    background-size: 25px;
+    background-repeat: no-repeat;
+    padding: 7px 10px 7px 30px;
+    color: #fff;
+    border-radius: 4px;
+    border: 0px;
+    cursor: pointer;
+    width: 115px;
+}
+
+.AddWidget__button--delete {
+    background-color: rgb(223, 28, 35);
+    background-image: url('../../assets/img/removewidget.svg');
+    background-position: left center;
+    background-size: 25px;
+    background-repeat: no-repeat;
+    padding: 7px 10px 7px 30px;
+    color: #fff;
+    border-radius: 4px;
+    border: 0px;
+    cursor: pointer;
+    width: 115px;
+}
+
+.AddWidget__button--save,
+.AddWidget__button--cancel {
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 7px 10px 7px 30px;
+    margin-right: 10px;
+    color: #fff;
+    border-radius: 4px;
+    border: 0px;
+    cursor: pointer;
+    width: 55px;
+    height: 22px;
+    float: right;
+}
+
+.AddWidget__button--save {
+    background-image: url('../../assets/img/savebutton_default.svg');
+}
+
+.AddWidget__button--save:hover {
+    background-image: url('../../assets/img/savebutton_hover.svg');
+}
+
+.AddWidget__button--save:active {
+    background-image: url('../../assets/img/savebutton_selected.svg');
+}
+
+.AddWidget__button--cancel {
+    background-image: url('../../assets/img/cancelbutton_default.svg');
+}
+
+.AddWidget__button--cancel:hover {
+    background-image: url('../../assets/img/cancelbutton_hover.svg');
+}
+
+.AddWidget__button--cancel:active {
+    background-image: url('../../assets/img/cancelbutton_selected.svg');
+}
+
+/**********************************
+** MODAL CONTENT
+***********************************/
+
+.Modal-content {
+    display: flex;
+    flex-direction: row;
+    min-height: 250px;
+}
+
+.Modal-content__sidebar {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(241, 246, 248);
+    border-right: 1px solid rgb(230, 236, 240);
+    width: 20%;
+    min-width: 100px;
+}
+
+.Modal-content__sidebar--list {
+    background-image: url('../../assets/img/mywidget.svg');
+    background-position: left center;
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    padding: 7px 0px 7px 32px;
+    font-size: 12px;
+    color: #647eac;
+}
+
+.Modal-content__body {
+    flex: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 0px 20px;
+    justify-content: space-between;
+}
+
+.Modal-content__body--widget {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #fff;
+    margin-bottom: 15px;
+    padding: 20px 15px;
+    border-bottom: 1px solid rgb(230, 236, 240);
+}
+
+.Modal-content__body--widget-img {
+    background-image: url('../../assets/img/users_activity.png');
+    background-position: left center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border-radius: 4px;
+    height: 65px;
+    width: 127px;
+}
+
+.Modal-content__body--widget-desc {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+}
+
+.Modal-content__body--widget-desc>.title {
+    font-size: 14px;
+}
+
+.Modal-content__body--widget-desc>.desc {
+    color: rgb(122, 144, 155);
+    font-size: 12px;
+}
+
+.Modal-content__body--widget-desc>.tags {
+    font-size: 12px;
+    color: #647eac;
+    margin-top: 7px;
+}
+
+.Modal-content__body--widget-desc>.tags>span {
+    background-color: rgb(235, 239, 244);
+    padding: 3px 6px;
+    border-radius: 4px;
+    margin-right: 5px;
+    text-transform: uppercase;
+    font-size: 10px;
+}

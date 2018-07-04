@@ -1,0 +1,49 @@
+/**********************************
+** MODAL
+***********************************/
+
+.Modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    background: #fff;
+    width: 60%;
+    min-width: 300px;
+    height: auto;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.Modal__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    padding: 10px 15px;
+    background-color: rgb(241, 246, 248);
+    border-bottom: 1px solid rgb(230, 236, 240);
+}
+
+.Modal__header--title {
+    color: rgb(37, 53, 76);
+}
+
+.Modal__header--btn {
+    background-image: url('../../assets/img/close.svg');
+    background-color: transparent;
+    border: 0px;
+    background-position: center;
+    cursor: pointer;
+}
+
+.backdrop {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0px;
+    left: 0px;
+    z-index: 9998;
+    background: rgba(0, 0, 0, 0.3);
+}
