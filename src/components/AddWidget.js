@@ -33,8 +33,8 @@ export default class AddWidget extends Component {
                                     <span className="title">Users worked more than required</span>
                                     <span className="desc">Users who worked more or less than their minimum hours required in daily, weekly and monthly.</span>
                                     <div className="tags">
-                                        Variables:
-                                        <span>users</span><span>websites</span><span>apps</span><span>time</span><span>date</span>
+                                        <span>Variables:</span>
+                                        <span className="tag">users</span><span className="tag">websites</span><span className="tag">apps</span><span className="tag">time</span><span className="tag">date</span>
                                     </div>
                                 </div>
                                 <div className="Modal-content__body--widget-action">

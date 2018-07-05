@@ -13,6 +13,7 @@
   position: relative;
   float: right;
   width: calc(100% - 55px);
+  background-color: #f9f9f9;
 }
 
 .App-content__header{
@@ -70,4 +71,10 @@
   padding: 10px;
   font-size: 30px;
   text-align: center;
+}
+
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: auto;
+  }
 }
